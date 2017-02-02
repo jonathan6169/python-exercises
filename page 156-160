@@ -1,0 +1,76 @@
+1. How many years does it take for the investment to triple? Modify the program
+and run it.
+
+It takes 23 years for the investment to triple
+RATE = 5.0
+INITIAL_BALANCE = 10000.0
+TARGET = 3 * INITIAL_BALANCE
+
+balance = INITIAL_BALANCE
+year = 0
+
+while balance < TARGET :
+    year = year + 1
+    interest = balance * RATE / 100
+    balance = balance + interest
+
+print("The investment tripled after", year, "years.")
+
+2. If the interest rate is 10 percent per year, how many years does it take for the
+investment to double? Modify the program and run it.
+
+It takes only 8 years for the investment to double.
+RATE = 10.0
+INITIAL_BALANCE = 10000.0
+TARGET = 2 * INITIAL_BALANCE
+
+balance = INITIAL_BALANCE
+year = 0
+
+while balance < TARGET :
+    year = year + 1
+    interest = balance * RATE / 100
+    balance = balance + interest
+
+print("The investment double after", year, "years.")
+
+3. Modify the program so that the balance after each year is printed. How did you
+do that?
+
+RATE = 10.0
+INITIAL_BALANCE = 10000.0
+TARGET = 2 * INITIAL_BALANCE
+
+balance = INITIAL_BALANCE
+year = 0
+
+while balance < TARGET :
+    year = year + 1
+    print(balance)
+    interest = balance * RATE / 100
+    balance = balance + interest
+
+print("The investment double after", year, "years.")
+
+I put print(balance) inside the loop.
+
+4. Suppose we change the program so that the condition of the while loop is while balance <= TARGET :
+What is the effect on the program? Why?
+
+There was no effect the result remained the same.
+
+5.What does the following loop print?
+
+n = 1
+while n < 100 :
+n = 2 * n
+print(n)
+
+This prints out:
+2
+4
+8
+16
+32
+64
+128
