@@ -1,0 +1,21 @@
+#Preparing a good sandwich
+
+def plainsandwich():
+    print("Cut the bread in half")
+    print("Add the meat and cheese on the bread")
+    print("Heat up the bread and ingredients for 1 minute")
+    print("Take out and add sauce and vegetables or lettuce")
+
+def make_ham_sandwich(ingredient):
+    plainsandwich()
+    sandwich = "a {} sandwich" . format(ingredient)
+    return sandwich
+
+def make_meatballsub(ingredient):
+    plainsandwich()
+    sub = "a {} sub" . format(ingredient)
+    return sub
+
+print(make_ham_sandwich("ham"))
+print(make_meatballsub("meatball"))
+    
